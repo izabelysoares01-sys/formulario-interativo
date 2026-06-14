@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário com Validação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 60px auto;
+      padding: 0 20px;
+      background-color: #f0f2f5;
+    }
+    h1 { font-size: 1.4rem; color: #333; margin-bottom: 24px; }
+    form { background: #fff; padding: 28px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    label { display: block; margin-bottom: 4px; font-size: 0.9rem; color: #555; font-weight: bold; }
+    input { width: 100%; padding: 10px; margin-bottom: 16px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; box-sizing: border-box; }
+    input:focus { outline: none; border-color: #4a90e2; }
+    button { width: 100%; padding: 12px; background-color: #4a90e2; color: white; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; }
+    button:hover { background-color: #357abd; }
+    #erro { color: #c0392b; background-color: #fdecea; border: 1px solid #e74c3c; border-radius: 5px; padding: 10px 14px; margin-top: 16px; font-size: 0.9rem; display: none; }
+    #sucesso { color: #27ae60; background-color: #eafaf1; border: 1px solid #2ecc71; border-radius: 5px; padding: 10px 14px; margin-top: 16px; font-size: 0.9rem; display: none; }
+  </style>
+</head>
+<body>
+  <h1>Formulário de Cadastro</h1>
+  <form id="meuFormulario">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" placeholder="Seu nome completo">
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="seu@email.com">
+    <label for="idade">Idade</label>
+    <input type="number" id="idade" placeholder="Ex: 25">
+    <button type="submit">Enviar</button>
+    <p id="erro"></p>
+    <p id="sucesso"></p>
+  </form>
+  <script src="validacao.js"></script>
+</body>
+</html>
